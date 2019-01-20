@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+   <head>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <!-- Use absolute path for js in order for it to load on the server -->
+  <link rel="stylesheet" href="css/juhnmkstyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+  
+  h1 {text-align:center;
+     position: relative;
+    top: 50%;
+     transform: translateY(-50%)}
+
+  p {text-align: center; position: justify;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+
+  html {
+    width: 100%;
+    height: 100%;
+    clip: auto;
+    position: absolute;
+    overflow: hidden;
+}
+
+body {
+    color: grey;
+}
+* { cursor: cell; !important; }
+
+
+.bgimagetransparent
+
+{
+  background-image: url(doomrainbow.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;;
+  position: absolute;
+  height: 100%;
+  opacity: 0.92;
+  width:100%;
+  z-index: -4;
+}
+
+.wrap
+  {width:90%; 
+   margin:0 auto;
+
+}
+ 
+#sidenavright, #main-content {width:100%; float: left;
+}
+
+
+
+
+.box{
+  width:170.1672px;
+  height:100%;
+  z-index: -1;
+  right: 5.5%;
+
+}
+
+.white {
+  /*background-color: #efffed;*/
+  background-image: url(staticfas.gif);
+  /*opacity: 0.01;*/
+  opacity: 0.03;
+  position: absolute;
+
+}
+
+.juhnmklogoc
+  {max-width: 150px}
+#juhnmklogo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+    ; }
+
+#artistlogo {
+  position: fixed;
+  top: 73.9%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+    ; }
+}
+
+#bg { 
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+#sidenavright {
+  margin:17px;
+  padding:92px 0 0 0;
+  padding-right: 13px;
+  float:right;
+  width:117px;
+  font-family:monospace, italic;
+  font-size: 13px;
+  opacity: 0.65;
+  letter-spacing: 0.1px
+
+}
+
+
+#sidenavright a {
+  color: blue;
+  text-decoration: underline;
+  background:inherit;
+  margin-right: 20px;
+  opacity: 1;
+
+
+
+}
+
+#sidenavright ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: right;
+  color:yellow;
+}
+
+#sidenavright a:hover {
+    color: blue;
+}
+
+.juhnmkascii
+
+  {position: fixed;
+  top: 50%;
+  left: 50%;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1)}
+pre {font-size: 0.96vw; color: blue;}
+
+
+.artistlogoascii
+{position: fixed;
+  top: 72.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0,0,0,0.6);
+  text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px blue}
+
+
+.index {
+ background-image: url(1zNg.gif);
+  background-size: cover;
+  background-repeat: no-repeat;;
+  opacity: 0.8;
+  position: absolute;
+  height: 100%;
+  width:100%;
+  z-index: -2
+}
+.mesa5 {
+  display: none;
+  background-image: url(MESA5cover.jpg);
+  background-size: cover;
+  opacity: 0.93;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  z-index: -2;
+
+
+
+}
+
+.doom{
+ display: none;
+  background-image: url(doomrainbow.jpg);
+  background-size: cover;
+  opacity: 0.87;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  z-index: -2;
+
+}
+
+.email{
+ display: none;
+  background-color: #1a1921;
+  background-size: cover;
+  opacity: 0.84;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  z-index: -2;
+
+}
+
+.bio{
+  display: none;
+  background-image: url(stars.gif);
+  background-size: cover;
+  opacity: 0.98;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  z-index: -2;
+
+}
+
+
+/* Backgrounds for Various Screen Sizes*/
+
+
+.tracks {
+  position: fixed;
+  height: auto;
+  width: auto;
+  left: 50%;
+  top: 50%;
+  z-index: -2;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  color: white;
+text-indent: 0px;
+font-family: monospace;
+}
+@media only screen and (max-width: 700px) {
+  
+    .bgimagetransparent {
+      background-image: url(doomrainbow.jpg);
+
+    }
+
+    #sidenavright {
+      margin:5px;
+      padding:92px 0 0 0;
+      padding-right: 13px;
+      width:117px;
+      font-family:monospace, italic;
+      font-size: 10px;
+      opacity: 0.88;
+      letter-spacing: 0.3px;
+      z-index: 2;
+      position: relative;
+
+    }
+
+    .wrap {
+      width:30%; 
+      margin:0 auto;
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      left: 48%;
+      top: 64%;
+      z-index: 10000;
+    }
+   #sidenavright a {
+      color: red;
+      text-decoration: underline;
+      background:inherit;
+      margin-right: 20px;
+      opacity: .88;
+
+
+    }
+
+    #sidenavright ul {
+      text-align: right;
+      color: yellow;
+      text-align: center;
+
+
+    }
+    #sidenavright a {
+      border: 1px solid lightgrey;
+    }
+    .white {
+      display: none;
+    }
+  
+    .mesa5 {
+      background-image: url(garfield.gif); 
+
+    }
+    .doom {
+      background-image: url(doommodephone.gif); 
+    }
+    .bio {
+      background-image: url(biophone.gif); 
+
+    }
+    .artistlogoascii {
+      display: none;
+    }
+    .tracks {
+       position: fixed;
+       top: 40%;
+       left: 50%;
+       max-width: 90%;
+       max-height: 90%
+
+    }
+ 
+
+}
+
+@media only screen and (max-width: 500px) {
+    .wrap {
+      left: 55%;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+    body {
+        background-image: none;
+        background-size: 100%;
+        background-repeat: repeat-x, repeat-y;
+        position: absolute;
+        height: 100%;
+        width:100%;
+        z-index: -2
+        
+
+}
+
+    <meta charset="utf-8">
+    <title>Juhnmk</title>
+  </style>
+
+    <meta charset="utf-8">
+    <title>juhnmk.com</title>
+  </style>
+  </head>
+  <body>
+
+  <div class="bgimagetransparent">
+  </div>
+
+  <div class="box white">
+  </div>
+
+  <div class="wrap">
+  <div id ="sidenavright" span id="navtext"
+  onclick="text3()">
+  <ul> 
+      <br><br><br><br><br><br><br><br><br>
+      <a class="liindex" href="index.html">>>.juhnmk.com</a></li>
+      <br><br>
+      <a class="limesa5" href="MESA-5.html">>>.mesa5</a></li>
+      <br><br>
+      <a class="lidoom" href="DOOMMODE.html">>>.doommode</a></li>
+      <br><br>
+       <!--<a class="liemail" href="juhnmkemail.html">>>signup</a></li>
+      <br><br>-->
+      <a class="libio" href="BIO.html">>>.stheory</a></li>
+  </ul></div>
+</div>
+
+
+
+<div class = "mesa5">
+</div>
+<div class = "doom">
+</div>
+<div class = "email">
+</div>
+<div class="bio">
+</div>
+
+
+
+  <audio source  id="frictionaudio" src="audio/frictionjuhnmkclip.mp3"></source></audio>
+  <audio source id="mesa5audio" src="audio/mesa5juhnmkclip_.mp3"></source></audio>
+  <audio source id="lifebloodaudio" src="audio/lifebloodjuhnmkclip.mp3"></source></audio>
+  <audio source id="indexaudio" src="audio/indexaudiolongg.mp3"></source></audio>
+
+
+
+<div class="tracks">
+<br>
+<audio controls>
+    <source src="audio/YouresoShallow.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<div class="label">
+YoureSoshallow.mp3
+</div>
+<br><br>
+<audio controls>
+    <source src="audio/Anxious_Auxedit.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<div class="label">
+  Anxious/AUXLOOP[TRANSITEDIT2018].mp3
+</div>
+<br><br>
+<audio controls>
+    <source src="audio/rack$.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<div class="label">
+Rack$$.mp3
+</div>
+
+
+</div>
+
+
+
+
+    
+  </div>
+
+      <h1></h1>
+<!-- Place script last for optimized experience -->
+<script src="js/juhnmkindex.js"></script>
+  </body>
+</html>
